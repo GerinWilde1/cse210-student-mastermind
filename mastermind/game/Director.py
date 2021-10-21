@@ -44,7 +44,7 @@ class Director:
         number = self._console.read_number("What number do you guess(0-9)?")
         location = self._console.read_number(f"Where do you think {number} is?")
         move = Move(number, location)
-        player.set_move(move)
+        Player.set_move(move)
 
     def _do_updates(self):
         """Updates the important game information for each round of play. In 

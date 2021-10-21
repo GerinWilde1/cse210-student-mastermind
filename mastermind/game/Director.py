@@ -2,13 +2,25 @@ from game.Player import Player
 from game.Board import Board
 from game.Console import Console
 from game.Move import Move
-from game.Roster import Poster
+from game.Roster import oster
+
+class Director:
 
 
+    def __init__(self):
+        pass
 
 
+    def _do_updates(self):
+        """Updates the important game information for each round of play. In 
+        this case, that means updating the board with the current move.
 
-
+        Args:
+            self (Director): An instance of Director.
+        """
+        player = self._roster.get_current()
+        move = player.get_move()
+        self._board.apply(move)
 
 
 

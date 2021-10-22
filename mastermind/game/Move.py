@@ -3,33 +3,20 @@ class Move:
     
     Stereotype: 
         Information Holder
-
     Attributes:
         _guess - This is the number guessed by the user. 
     """
-    def __init__(self, number, location):
+    def __init__(self, guess):
         """The class constructor.
         
         Args:
             self (Board): an instance of Board.
         """
-        self._number = number
-        self._location = location
+        self._guess = guess
         
-
-    def get_number(self):
+    def get_guess(self):
         """This will return the guess.
-
         Args:
             self (Move): an instance of Move.
         """
-        return self._number
-
-        #location
-    def get_location(self):
-        """This will return the location.
-
-        Args:
-            self (Move): an instance of Move.
-        """
-        return self._location 
+        return self._guess

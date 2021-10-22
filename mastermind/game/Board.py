@@ -11,7 +11,7 @@ class Board:
           def apply(self, move):
                     number = move.get_number()
           def is_empty(self):
-                    """may not be needed"""
+                    
                     
                     pass
                     

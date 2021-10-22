@@ -18,7 +18,19 @@ class Board:
           def to_string(self):
                     """output that will be used as a visual for the players."""
 
-          def _prepare(self):
-                    """sets up the number to be guessed and places it in the list _numbers"""
+                    pass
+          def _prepare(self, player):
 
+
+            def _prepare(self):
+
+                    """sets up the number to be guessed and places it in the list _numbers"""
+                    code = str(random.randint(1000, 9999))
+            
+                
+                    self._items[player] = [code] 
+                    self._items[player] = [code]
+
+                    def get_current(self):
+                        pass    
                     

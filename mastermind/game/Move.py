@@ -3,7 +3,6 @@ class Move:
     
     Stereotype: 
         Information Holder
-
     Attributes:
         _guess - This is the number guessed by the user. 
     """
@@ -15,15 +14,9 @@ class Move:
         """
         self._guess = guess
         
-
     def get_guess(self):
         """This will return the guess.
-
         Args:
             self (Move): an instance of Move.
         """
         return self._guess
-
-        #side note; I'm typing this to verify that I'm my pushing .py file. 
-
-    

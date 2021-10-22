@@ -4,7 +4,7 @@ class Board:
 
 
           def __init__(self):
-                    self._piles = []
+                    self._numbers = []
                     self._prepare()
 
 
@@ -33,5 +33,5 @@ class Board:
                     
                     numbers = []
                     for i in range(4):#give 4 random numbers, from 1-20
-                              self._piles.append(random.randint(1,20))
+                              self._numbers.append(random.randint(0,9))
                     return numbers

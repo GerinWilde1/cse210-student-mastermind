@@ -10,7 +10,7 @@ class Board:
 
           def apply(self, move):
                     number = move.get_number()
-          def is_empty(self):
+          def is_solved(self):
                     
                     
                     pass

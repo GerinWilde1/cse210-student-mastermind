@@ -33,5 +33,5 @@ root                    (project root folder)
 * Python 3.8.0
 
 ## Authors
----
+Gerin Wilde - Director, Console, Roster, Player.
 * # TODO: Add your names and emails here

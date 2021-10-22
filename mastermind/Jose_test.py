@@ -9,9 +9,9 @@ class Board:
 
 
           def apply(self, move):
-                    pile = move.get_pile()
-                    colors = move.get_colors()
-                    self._piles[pile] = max(0, self._piles[pile] - colors)
+                    number = move.get_numbers()
+                    clocation = move.get_location()
+                    self._piles[pile] = max(0, self._piles[number] - colors)
           
           
           def is_solved(self):

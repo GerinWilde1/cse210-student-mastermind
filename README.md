@@ -36,3 +36,4 @@ root                    (project root folder)
 Gerin Wilde - Director, Console, Roster, Player.
 
 * # TODO: Add your names and emails here
+Gerin Wilde - gerinw@byui.edu

@@ -17,7 +17,7 @@ class Board:
                     
           def to_string(self):
                     """output that will be used as a visual for the players."""
-                    pass
+
           def _prepare(self):
                     """sets up the number to be guessed and places it in the list _numbers"""
 

@@ -1,10 +1,37 @@
-
 import random
-def _prepare(self):
-          # """sets up the number to be guessed and places it in the list _numbers"""
-          numbers = []
-          for i in range(4):
-                    numbers.append(random.randint(1,20))
-          return numbers
-master_list = _prepare(5)
-print(master_list)
+
+class Board:
+
+
+          def __init__(self):
+                    self._piles = []
+                    self._prepare()
+
+
+          def apply(self, move):
+                    pile = move.get_pile()
+                    colors = move.get_colors()
+                    self._piles[pile] = max(0, self._piles[pile] - colors)
+          
+          
+          def is_solved(self):
+                    
+                    
+                    pass
+                    
+          def to_string(self):
+                    text = "\n-------------------------\n"
+                    for pile, colors in enumerate(self._piles):
+                              text += (f"\n{pile}: " + "O " * colors)
+                    text += "-------------------------\n"
+                    return text  
+
+
+
+          def _prepare(self):
+                    # """sets up the number to be guessed and places it in the list _piles"""
+                    
+                    numbers = []
+                    for i in range(4):#give 4 random numbers, from 1-20
+                              self._piles.append(random.randint(1,20))
+                    return numbers

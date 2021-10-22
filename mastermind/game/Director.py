@@ -59,9 +59,9 @@ class Director:
     def _do_outputs(self):
         """depending on if the player won or not it will put out different things. 
         like if they win it will let them know or if they lost to will move to the next player."""
-        if self._board.is_solve():
-            winner = self._roster.get_current()
-            name = winner.get_name()
-            print(f"\n{name} won!")
-            self._keep_playing = False
-        self._roster.next_player()
+        if self._board.is_solve(): #checks is_solved function for a winner
+            winner = self._roster.get_current() #gets the information on the current player
+            name = winner.get_name() #gets the name of the winner
+            print(f"\n{name} won!") #prints out winning message
+            self._keep_playing = False #changes _keep_playing to false stopping the game
+        self._roster.next_player() # is there is no winner it cycles to the next player

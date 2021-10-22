@@ -10,8 +10,8 @@ class Board:
 
     def apply(self, move):
         number = move.get_number()
-    def is_empty(self):
-         """may not be needed"""
+    def is_solved(self):
+         """checks to see is the player has solves the problem"""
     
          pass
     

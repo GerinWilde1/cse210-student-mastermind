@@ -18,28 +18,26 @@ class Director:
 
 
     def start_playing(self):
-        """"""
+        """Gets everything going and runs through each function in order to get the game going."""
         
         
         self._prepare_game()
         while self._keep_playing:
             self._get_inputs()
             self._do_updates()
-            self._do_outputs
+            self._do_outputs()
 
     def _prepare_game(self):
+        """This gets the name of each of the players and adds them to the roster."""
 
-
-        for n in range(2):
-            name = self._console.read(f"Please enter a name for player {n + 1}: ")
-            player = Player(name)
-            self._roster.add_player(player)
+        for n in range(2):#makes sure there are only two players
+            name = self._console.read(f"Please enter a name for player {n + 1}: ")#asks for each of the players names
+            player = Player(name)#makes the payers information a simple variable
+            self._roster.add_player(player)#adds the players name to a list in the roster
 
 
     def _get_inputs(self):
-        """This gets the inputs from the player each round and assigns them where they need to go.
-        
-        """
+        """This gets the inputs from the player each round and assigns them where they need to go. """
         
         board = self._board.to_string() #gets the players display from the board class
         self._console.write(board) #outputs on th escreen the information it gets from "board"
@@ -51,25 +49,17 @@ class Director:
         player.set_move(move) #Changes the move variable in Player from None to the numbers that it should be 
 
     def _do_updates(self):
-        """Updates the important game information for each round of play. In 
-        this case, that means updating the board with the current move.
-
-        Args:
-            self (Director): An instance of Director.
-        """
+        """Updates important information like the move made by the player."""
+        
         player = self._roster.get_current() # gets the current player from the roster
         move = player.get_move()
-        self._board.apply(move)
+        self._board.apply(move) #this updates the move made by whichever player.
 
 
     def _do_outputs(self):
-        """Outputs the important game information for each round of play. In 
-        this case, that means checking if there are stones left and declaring the winner.
-
-        Args:
-            self (Director): An instance of Director.
-        """
-        if self._board.is_empty():
+        """depending on if the player won or not it will put out different things. 
+        like if they win it will let them know or if they lost to will move to the next player."""
+        if self._board.is_solve():
             winner = self._roster.get_current()
             name = winner.get_name()
             print(f"\n{name} won!")

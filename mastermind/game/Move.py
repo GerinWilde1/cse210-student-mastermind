@@ -7,23 +7,29 @@ class Move:
     Attributes:
         _guess - This is the number guessed by the user. 
     """
-    def __init__(self, guess):
+    def __init__(self, number, location):
         """The class constructor.
         
         Args:
             self (Board): an instance of Board.
         """
-        self._guess = guess
+        self._number = number
+        self._location = location
         
 
-    def get_guess(self):
+    def get_number(self):
         """This will return the guess.
 
         Args:
             self (Move): an instance of Move.
         """
-        return self._guess
+        return self._number
 
-        #side note; I'm typing this to verify that I'm my pushing .py file. 
+        #location
+    def get_location(self):
+        """This will return the location.
 
-    
+        Args:
+            self (Move): an instance of Move.
+        """
+        return self._location 

@@ -19,9 +19,9 @@ numbers = [1, 3, 2, 4]
 for i in numbers:
     for n in guess:
         if i == n and guess.index(n) != numbers.index(i):
-            origonal[guess.index(n)] = "X"
+            origonal[guess.index(n)] = "O"
         elif i == n:
-            origonal[numbers.index(n)] = "O"
+            origonal[numbers.index(n)] = "X"
 
         
 

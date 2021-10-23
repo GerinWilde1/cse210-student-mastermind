@@ -1,37 +1,26 @@
 import random
 
-class Board:
-
-
-    def __init__(self):
-        self._numbers = []
-        self._prepare()
-
-
-    def apply(self, move):
-        number = move.get_numbers()
-        location = move.get_location()
-        self._piles[pile] = max(0, self._piles[number] - colors)
-    
-    
-    def is_solved(self):
-            
-            
-            pass
-            
-    def to_string(self):
-        text = "\n-------------------------\n"
-        for pile, colors in enumerate(self._numbers):
-                    text += (f"\n{pile}: " + "O " * colors)
-        text += "-------------------------\n"
-        return text  
+original = ["1","2","3","4"]
+print(original)
+new_boards = ["O","O","O","O"]
+print(new_boards)
+# def random_sample ():
+#     n=random.sample(range(1,20), 4)
+#     return n
+# print(random_sample())
+guess1 = input("please enter the number: ")
+# guess2 = input("please enter the number: ")
+# guess3 = input("please enter the number: ")
+# guess4 = input("please enter the number: ")
 
 
 
-    def _prepare(self):
-        # """sets up the number to be guessed and places it in the list _piles"""
-        
-        numbers = []
-        for i in range(4):#give 4 random numbers, from 1-20
-                    self._numbers.append(random.randint(0,9))
-        return numbers
+
+if guess1 in original:
+    for string in new_boards:
+        new_string = string.replace("0", guess1)
+
+
+        new_boards.append(new_string)
+
+    print(new_boards)

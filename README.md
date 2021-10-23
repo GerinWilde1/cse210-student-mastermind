@@ -34,6 +34,8 @@ root                    (project root folder)
 
 ## Authors
 Gerin Wilde - Director, Console, Roster, Player.
+Juan Figueroa - Move
 
 * # TODO: Add your names and emails here
 Gerin Wilde - gerinw@byui.edu
+Juan Figueroa - j22figueroa@yahoo.com

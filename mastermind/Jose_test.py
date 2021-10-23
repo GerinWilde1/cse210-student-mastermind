@@ -1,12 +1,5 @@
 import random
-def _prepare():
-        # """sets up the number to be guessed and places it in the list _piles"""
-        
-        numbers = []
-        for i in range(4):#give 4 random numbers, from 1-20
-                    numbers.append(random.randint(0,9))
-        return numbers
-print(_prepare)
+
 class Board:
 
 
@@ -17,7 +10,7 @@ class Board:
 
           def apply(self, move):
                     number = move.get_numbers()
-                    clocation = move.get_location()
+                    location = move.get_location()
                     self._piles[pile] = max(0, self._piles[number] - colors)
           
           

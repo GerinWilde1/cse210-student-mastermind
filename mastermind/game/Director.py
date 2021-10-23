@@ -32,7 +32,7 @@ class Director:
 
         for n in range(2):
             name = self._console.read(f"Please enter a name for player {n + 1}: ")
-            player = Player(name)
+            player = player(name)
             self._roster.add_player(player)
 
 

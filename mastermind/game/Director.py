@@ -17,7 +17,7 @@ class Director:
 
 
 
-    def start_playing(self):
+    def start_game(self):
         """"""
         
         

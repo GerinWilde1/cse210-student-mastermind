@@ -20,9 +20,7 @@ for i in numbers:
 
         print(f"{i}{n}") 
 new = []
-
-
-for i in range(4):
-    new.append(random.randint(0, 9))
+word = 1245
+new.append(word[1])
 
 print(new)

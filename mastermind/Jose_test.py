@@ -23,10 +23,11 @@ print(numbers)
 # empty[index] = "X"
 # print(empty) 
 
+new = []
+word = 1245
+new.append(word[word+1])
 
-
-
-
+print(new)
 
 
 

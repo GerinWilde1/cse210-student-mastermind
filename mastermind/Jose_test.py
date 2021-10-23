@@ -10,9 +10,8 @@ guess1 =input("please enter a number from 1-4")
 index = guess_test.index(guess1)
 print(index)
 
-empty[index] = guess1
+empty[index] = "X"
 print(empty)
-
 
 
 

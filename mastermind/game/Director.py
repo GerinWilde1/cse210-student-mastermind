@@ -8,6 +8,7 @@ class Director:
 
 
     def __init__(self):
+        """all the needed variables"""
         self._player = Player()
         self._board = Board()
         self._console = Console()
@@ -18,7 +19,7 @@ class Director:
 
 
     def start_game(self):
-        """"""
+        """Start game is what is called in __main__ to get everything going."""
         
         
         self._prepare_game()

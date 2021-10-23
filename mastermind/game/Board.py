@@ -6,11 +6,18 @@ class Board:
           def __init__(self):
             self._numbers = []
             self._prepare()
+            self.origional = ["*","*","*","*"]
           
 
           def apply(self, move):
+            for i in self._numbers:
+              for n in move._guess:
+                if i == n and move._guess.index(n) != self._numbers.index(i):
+                    self.origonal[move.guess.index(n)] = "O"
+                elif i == n:
+                    self.origonal[self._numbers.index(n)] = "X"
 
-            pass
+            
           
           def to_string(self):
             """output that will be used as a visual for the players."""

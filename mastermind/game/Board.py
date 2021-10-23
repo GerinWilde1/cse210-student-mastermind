@@ -1,5 +1,5 @@
 import random
-from game import Player
+from typing import Text
 class Board:
 
 

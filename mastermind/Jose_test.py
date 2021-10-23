@@ -24,7 +24,7 @@ for i in numbers:
               
 
 
-x = list(set(digit_list).intersection(set(numbers)))
+
 
 
 

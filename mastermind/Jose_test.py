@@ -9,7 +9,7 @@ numbers = []
 for i in range(4):#give 4 random numbers, from 1-20
             numbers.append(random.randint(0,9))
 
-guess1 =input("please enter a number from 1-4")
+guess1 =input("please enter a 4 digit number")
 
 digit_string = str(guess1)
 digit_map = map(int, digit_string)

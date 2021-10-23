@@ -39,3 +39,4 @@ Juan Figueroa - Move
 * # TODO: Add your names and emails here
 Gerin Wilde - gerinw@byui.edu
 Juan Figueroa - j22figueroa@yahoo.com
+Gerald Quispe - qui17007@byui.edu

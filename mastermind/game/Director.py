@@ -45,9 +45,8 @@ class Director:
         self._console.write(board) #outputs on th escreen the information it gets from "board"
         player = self._roster.get_current() #gets the current players information
         self._console.write(f"{player.get_name()}'s turn") #alerts the player that it's their turn
-        number = self._console.read_number("What number do you guess(0-9)?") #asks the player what their guess is
-        location = self._console.read_number(f"Where do you think {number} is?") # asks the location that the player thinks their guess is in
-        move = Move(number, location) #passes number and location to the Move class so they can be processed
+        guess = self._console.read_number("What number do you guess(0000-9999)?") #asks the player what their guess is
+        move = Move(guess) #passes number and location to the Move class so they can be processed
         player.set_move(move) #Changes the move variable in Player from None to the numbers that it should be 
 
     def _do_updates(self):

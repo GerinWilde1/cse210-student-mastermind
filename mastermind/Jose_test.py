@@ -4,14 +4,28 @@ import random
 
 empty = ["*","*","*","*",]
 guess_test = ["1", "2", "3", "4"]
+user_list = []
+
 guess1 =input("please enter a number from 1-4")
 
+digit_string = str(guess1)
 
-index = guess_test.index(guess1)
-print(index)
 
-empty[index] = "X"
-print(empty)
+digit_map = map(int, digit_string)
+
+
+
+digit_list = list(digit_map)
+
+
+
+print(digit_list)
+
+# index = guess_test.index(guess1)
+# print(index)
+
+# empty[index] = "X"
+# print(empty) 
 
 
 
@@ -33,9 +47,9 @@ print(empty)
 # #     return n
 # # print(random_sample())
 # guess1 = input("please enter the number: ")
-# # guess2 = input("please enter the number: ")
-# # guess3 = input("please enter the number: ")
-# # guess4 = input("please enter the number: ")
+# guess2 = input("please enter the number: ")
+# guess3 = input("please enter the number: ")
+# guess4 = input("please enter the number: ")
 
 
 

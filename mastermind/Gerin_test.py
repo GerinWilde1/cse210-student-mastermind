@@ -19,3 +19,10 @@ for i in numbers:
 
 
         print(f"{i}{n}") 
+new = []
+
+
+for i in range(4):
+    new.append(random.randint(0, 9))
+
+print(new)

@@ -23,15 +23,9 @@ class Board:
           def _prepare(self):
 
             """sets up the number to be guessed and places it in the list _numbers"""
+            for i in range(4):
+              self._numbers.append(random.randint(0-9))
             
             
-            name = Player.get_name()
-            code = str(random.randint(1000, 9999))
-    
-        
-            self._items[player] = [code] 
-            self._items[player] = [code]
-
-            def get_current(self):
-                pass    
+          
             

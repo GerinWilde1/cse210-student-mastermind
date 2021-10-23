@@ -7,9 +7,10 @@ guess_test = ["1", "2", "3", "4"]
 user_list = []
 numbers = []
 for i in range(4):#give 4 random numbers, from 1-20
-            numbers.append(random.randint(0,9))
+          numbers.append(random.randint(0,9))
 
 guess1 =input("please enter a 4 digit number")
+
 
 digit_string = str(guess1)
 digit_map = map(int, digit_string)
@@ -17,7 +18,21 @@ digit_list = list(digit_map)
 print(digit_list)
 print(numbers)
 
-# index = guess_test.index(guess1)
+print(f"{numbers[0]} {numbers[1]} {numbers[2]} {numbers[3]}")
+for i in numbers:
+    for n in guess:
+              
+
+
+
+
+
+
+
+
+
+
+# index = guess_test.index(digit_list)
 # print(index)
 
 # empty[index] = "X"

@@ -10,8 +10,8 @@ print(f"{numbers[0]} {numbers[1]} {numbers[2]} {numbers[3]}")
 for i in numbers:
     for n in guess:
         if i == n:
-            origonal[numbers.index(i)] = "O"
-        #print(origonal)
+            origonal[numbers.index(n)] = "O"
+        
             
 
             

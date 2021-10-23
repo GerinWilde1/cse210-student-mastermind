@@ -9,5 +9,9 @@ for i in range(4):#give 4 random numbers, from 1-20
 print(f"{numbers[0]} {numbers[1]} {numbers[2]} {numbers[3]}")
 for i in range(len(numbers)):
     for n in range(len(guess)):
-        
-        print(f"") 
+        if i == n:
+            
+
+
+
+        print(f"{i}{n}") 

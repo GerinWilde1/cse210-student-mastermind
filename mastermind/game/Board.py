@@ -31,7 +31,7 @@ class Board:
 
     """sets up the number to be guessed and places it in the list _numbers"""
     for i in range(4):
-      self._numbers.append(random.randint(0-9))
+      self._numbers.append(random.randint(0, 9))
             
             
           

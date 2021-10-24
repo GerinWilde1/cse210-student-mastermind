@@ -9,14 +9,12 @@ class Director:
 
     def __init__(self):
         """all the needed variables"""
-        self._player = Player()
         self._board = Board()
         self._console = Console()
-        self._roster = Roster()
         self._keep_playing = True
         self._move = None
-
-
+        self._roster = Roster()
+        #self._player = Player()
 
     def start_game(self):
         """Start game is what is called in __main__ to get everything going."""
@@ -33,7 +31,7 @@ class Director:
 
         for n in range(2):
             name = self._console.read(f"Please enter a name for player {n + 1}: ")
-            player = player(name)
+            player = Player(name)
             self._roster.add_player(player)
 
 

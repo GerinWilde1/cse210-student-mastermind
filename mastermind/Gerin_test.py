@@ -9,13 +9,6 @@ for i in range(4):#give 4 random numbers, from 1-20
 print(f"{numbers[0]} {numbers[1]} {numbers[2]} {numbers[3]}")
 
 
-
-
-
-
-
-
-
 for i in numbers:
     for n in guess:
         if i == n and guess.index(n) != numbers.index(i):

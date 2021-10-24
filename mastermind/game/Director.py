@@ -26,7 +26,7 @@ class Director:
         while self._keep_playing:
             self._get_inputs()
             self._do_updates()
-            self._do_outputs
+            self._do_outputs()
 
     def _prepare_game(self):
 

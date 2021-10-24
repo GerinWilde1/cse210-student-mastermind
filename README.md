@@ -33,7 +33,7 @@ root                    (project root folder)
 * Python 3.8.0
 
 ## Authors
-Gerin Wilde - Director, Console, Roster, Player.
+Gerin Wilde - Director, Console, Roster, Player, Board.
 Juan Figueroa - Move
 
 * # TODO: Add your names and emails here
